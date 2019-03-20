@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'jhipster:$(build.buildId)'
+  imageName: 'jhipster:latest'
 
 steps:
 - script: docker build -f Dockerfile -t $(imageName) .
